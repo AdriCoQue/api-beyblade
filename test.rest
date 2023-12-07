@@ -1,0 +1,34 @@
+GET http://localhost:3000/beyblades
+
+###
+
+GET http://localhost:3000/beyblades/655fb65d6179b884a54601a5
+
+###
+
+POST http://localhost:3000/beyblades
+Content-Type: application/json
+
+{
+        "name": "Nightmare Luinor",
+        "jpname": "Nightmare Longinus",
+        "type": "Ataque",
+        "spin": "Izquierda",
+        "system": "God",
+        "series": "Beyblade Burst Evolution",
+        "blader": "Lui Shirosagi"
+        
+}
+
+###
+
+PATCH http://localhost:3000/beyblades/6560dc99885e4173e231ed60
+Content-Type: application/json
+
+{
+    "image": "/files/img/image-1700846745729.png"
+}
+
+###
+
+DELETE http://localhost:3000/beyblades/6560e2aa752ec483a469f0ec
